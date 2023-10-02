@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Code 4U</title>
+
+    <!--CSS File-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+      <img src="C:\Users\HP\OneDrive\Desktop\Bootstrap\final logo.png" alt="Bootstrap" width="50" height="50">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Code 4U</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="file:///C:/Users/HP/OneDrive/Desktop/Bootstrap/Index2.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="https://www.w3schools.com/">Courses</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Technology
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://www.javatpoint.com/html-tutorial">HTML</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="https://www.geeksforgeeks.org/web-technology/">Web Technology</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="https://getbootstrap.com/"> Bootstrap</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="https://www.geeksforgeeks.org/javascript/"> Javascript</a></li>
+                <li><hr class="dropdown-divider"></li>
+                
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+           <!--login signup-->
+          <div class="mx-2">
+            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
+              <button type="button" class="btn btn-warning"data-bs-toggle="modal" data-bs-target="#SignUpModal">SignUp</button>
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+     <!--Modal-->
+     
+
+<!--Login Modal -->
+<div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Login to Code 4U</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!--Login form -->
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Sign up Modal -->
+<div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Get an Code 4U Account</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!--SignUp form -->
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="cexampleInputPassword1" class="form-label"> Confirm Password</label>
+            <input type="password" class="form-control" id="cexampleInputPassword1">
+          </div>
+         
+          <button type="submit" class="btn btn-primary">Create Account</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+     <!--slides-->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner my- -1" >
+        <div class="carousel-item active">
+          <img src="C:\Users\HP\OneDrive\Desktop\Bootstrap\LAPTOP IMAGE.jpg" height="500px;" width="500px;" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Code 4U</h1>
+            <p>Come and Grow In The World Of Codes</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="C:\Users\HP\OneDrive\Desktop\Bootstrap\tech3.avif" height="500px;" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Code 4U</h1>
+            <p>Come and Grow In The World Of Codes</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="C:\Users\HP\OneDrive\Desktop\Bootstrap\imagesss1.jpg"height="500px;" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Code 4U</h1>
+            <p>Come and Grow In The World Of Codes.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>    
+     <!--Accordion-->
+     <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+           <strong>Learn HTML</strong>  
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">HyperText Markup Language (HTML) is a markup language used to create web pages. It was created in 1990 by Sir Tim Berners-Lee, a British computer scientist who is credited with inventing the World Wide Web.[1] Webpages can include writing, links, pictures, and even sound and video. HTML tells web browsers what webpages should look like. HTML also adds meta information to webpages. Meta information is information about a webpage e.g., the name of the person who created the page. Web browsers usually do not show meta information.
+
+            HTML is often used with Cascading Style Sheets (CSS) and JavaScript. CSS is used to change the way HTML looks. JavaScript tells websites how to behave. It can also change HTML and CSS.
+            
+            HTML is made by the World Wide Web Consortium (W3C). There are many versions of HTML. As of September 2018, the current standard of HTML is called HTML 5 and is specifically at version 5.2.class. This is the first item's accordion body.
+            <br>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="https://www.javatpoint.com/html-tutorial">Learn More</a></li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            <strong>Learn CSS</strong>
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+
+            CSS is designed to enable the separation of content and presentation, including layout, colors, and fonts.[3] This separation can improve content accessibility; provide more flexibility and control in the specification of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, which reduces complexity and repetition in the structural content; and enable the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.
+            
+            Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based tactile devices. CSS also has rules for alternate formatting if the content is accessed on a mobile device.[4]
+            
+            The name cascading comes from the specified priority scheme to determine which style rule applies if more than one rule matches a particular element. This cascading priority scheme is predictable.
+            
+            The CSS specifications are maintained by the World Wide Web Consortium (W3C). Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998). The W3C operates a free CSS validation service for CSS documents.
+            
+            In addition to HTML, other markup languages support the use of CSS including XHTML, plain XML, SVG, and XUL. CSS is also used in the GTK widget toolkit.</div>
+            <br>
+            <!--Breadcrumb-->
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="https://www.w3schools.com/css/css_syntax.asp">Learn Syntax</a></li>
+              </ol>
+            </nav>
+          </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            <strong>Learn Web Development</strong>
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"> Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development.
+
+            Among Web professionals, "Web development" usually refers to the main non-design aspects of building Web sites: writing markup and coding. Web development may use content management systems (CMS) to make content changes easier and available with basic technical skills.
+            
+            For larger organizations and businesses, Web development teams can consist of hundreds of people (Web developers) and follow standard methods like Agile methodologies while developing Web sites. Smaller organizations may only require a single permanent or contracting developer, or secondary assignment to related job positions such as a graphic designer or information systems technician. Web development may be a collaborative effort between departments rather than the domain of a designated department. There are three kinds of Web developer specialization: front-end developer, back-end developer, and full-stack developer. Front-end developers are responsible for behavior and visuals that run in the user browser, while back-end developers deal with the servers.[4] Since the commercialization of the Web, the industry has boomed and has become one of the most used technologies ever.</div>
+            <br>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="https://www.geeksforgeeks.org/web-development/">For More</a></li>
+                
+              </ol>
+            </nav>
+          </div>
+      </div>
+    </div>
+<!--Grid System & Card-->
+<div class="container text-center my-3">
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img src="C:\Users\HP\OneDrive\Desktop\Bootstrap\html logo.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Hypertext Markup Language</h5>
+          <p class="card-text">HTML (HyperText Markup Language) is the code that is used to structure a web page and its content.</p>
+          <a href="#" class="btn btn-danger">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img src="C:\Users\HP\OneDrive\Desktop\Bootstrap\css-logo.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Cascading Style Sheets</h5>
+          <p class="card-text">CSS (Cascading Style Sheets) is used to style and layout web pages.</p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img src="C:\Users\HP\OneDrive\Desktop\Bootstrap\js logo.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">JavaScript</h5>
+          <p class="card-text">JavaScript (JS) is a cross-platform, object-oriented programming language used by developers to make web pages interactive.</p>
+          <a href="#" class="btn btn-warning">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!--Column -->
+  <h1><center>Our Students are placed at</center></h1>
+<div class="container text-center my-3">
+  <div class="row">
+    <div class="col">
+      <img src="C:\Users\HP\OneDrive\Desktop\Bootstrap\google logo.png" class="img-thumbnail" alt="...">
+    </div>
+    <div class="col">
+      <img src="C:\Users\HP\OneDrive\Desktop\Bootstrap\amazon-logo-transparent.png" class="img-thumbnail" alt="...">
+    </div>
+    <div class="col">
+      <img src="C:\Users\HP\OneDrive\Desktop\Bootstrap\microsoft logo.png" class="img-thumbnail" alt="...">
+    </div>
+  </div>
+</div>
+  </body>
+
+  <!--Header Footer-->
+
+<div class="card text-center">
+  <div class="card-header">
+  <b> Follow Us</b>
+  </div>
+  <div class="card-body">
+    <img src="C:\Users\HP\OneDrive\Desktop\Bootstrap\facebook-logo.png"height="50px;" alt="facebook">
+    <img src="C:\Users\HP\OneDrive\Desktop\Bootstrap\youtube logo.png"height="50px;" alt="youtube">
+    <img src="C:\Users\HP\OneDrive\Desktop\Bootstrap\Instagram logo.png"height="50px;" alt="instagram">
+    <img src="C:\Users\HP\OneDrive\Desktop\Bootstrap\twitter logo.png"height="50px;" alt="Twitter">
+    
+  </div>
+  <div class="card-footer text-body-secondary">
+    
+  </div>
+</div>
+
+
+<!--footer last-->
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+  <p class="col-md-4 mb-0 text-body-secondary">© 2023 Code 4U</p>
+
+  <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+  </a>
+
+  <ul class="nav col-md-4 justify-content-end">
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+  </ul>
+</footer>
+
+
+
+
+    <!--js File-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
